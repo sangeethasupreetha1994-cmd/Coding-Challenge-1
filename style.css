@@ -1,0 +1,120 @@
+/* reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full page background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* navigation bar */
+.navbar {
+    background-color: #222;
+    color: white;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0; /* important */
+    margin: 0; /* remove extra gap */
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    margin: 0 auto; /* centers navbar content */
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+ 
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 900px; /* controls content width */
+    margin: 0 auto; /* centers */
+    padding: 30px;
+    background: white;
+    border-radius: 6px; 
+    box-shadow: 0 0 15 rbga(0,0,0,0.2);
+    margin-top: 0;
+}
+
+.container:first-of-type {
+    margin-top: 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.date {
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* blog image */
+.hero-img {
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0;
+    height: 350px;
+    display: block;
+}
+
+/* text content */
+.content {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0; /* removes gap pushing container down */
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.hero-section {
+    height: 100%;
+    width: 100%;
+    background-image: url("assets/beautiful-nature-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.footer { 
+    text-align: center;
+    padding: 15px 0;
+    background-color: #222;
+    color: white;
+    margin: 0;
+}
